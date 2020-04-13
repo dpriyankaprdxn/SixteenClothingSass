@@ -1,0 +1,68 @@
+header { 
+  padding-top: 30px;
+  position: relative;
+  background: $black; 
+}
+
+header .wrapper {
+  @include flex;
+  @include flexcontent;
+}
+
+.menu { 
+  @include flexbasis(46%);
+}
+
+.hamburger {
+  width: 32px;
+  float : right;
+  display: none;
+  position: relative;
+  cursor: pointer;
+  @include transform(rotate(0deg));
+  @include transition(.5s);
+} 
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background : $primary;
+  text-indent: -9999px;
+  @include transform(rotate(0deg));
+  @include transition(.25s);
+}
+
+.hamburger span:nth-child(1) { top : 0; }
+
+.hamburger span:nth-child(2) { top : 8px; }
+
+.hamburger span:nth-child(3) { top : 16px; }
+
+.hamburger.open span:nth-child(1) {
+  top: 18px;
+  @include transform(rotate(135deg));
+}
+
+.hamburger.open span:nth-child(2) {  opacity: 0; }
+
+.hamburger.open span:nth-child(3) {
+  top: 18px;
+  @include transform(rotate(-135deg));
+}
+
+nav a {
+  padding-bottom: 28px;
+  border-bottom : 2px solid transparent;
+  color: $white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.active {   border-bottom : 2px solid $primary;  }
+
+.showhide { display: block; }
+
+nav li:not(:last-child) a { margin-right: 50px; }

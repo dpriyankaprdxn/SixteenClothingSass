@@ -1,0 +1,33 @@
+
+.purchase {
+  ul {
+    @include flex;
+    @include flexcontent;
+
+  }
+}
+
+.purchase {
+  .wrapper {
+    -webkit-box-sizing : border-box;    
+    box-sizing : border-box;
+    padding : 18px 2%;
+    @include borderradius(5px);
+    margin-bottom : 55px;
+    background :#f7f7f7;
+  }
+}
+
+.purchase {
+  h4 {  margin: 12px 0; }
+}
+
+.purchase__btn {
+  padding : 12px;
+  border : 1px solid transparent;
+  @include borderradius(5px);
+  margin-top : 5px;
+  background : $primary;
+  color : $white;
+  font-size : 14px;
+}

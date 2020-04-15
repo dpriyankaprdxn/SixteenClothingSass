@@ -27,3 +27,9 @@
   -o-transition: $seconds ease-in-out;
   transition: $seconds ease-in-out;
 }
+
+@mixin borderradius($radius) {
+  -moz-border-radius   : $radius;
+  -webkit-border-radius :  $radius;
+  border-radius :  $radius;
+}

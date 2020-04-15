@@ -1,0 +1,35 @@
+h2 {
+    margin-top: 28px;
+    color: $white;
+    font : bold 52px sans-serif;
+  }
+  
+.banner  {
+    .wrapper {   width: 100%; }
+}
+  
+.slider {
+    li { position: relative;  }
+}
+
+.slider {
+    & li:not(:first-child) { display : none;  }
+}
+  
+.slider__text {
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    @include transform(translate(-50%,-50%));
+}
+  
+.slider__text {
+    span { 
+    color: $primary;
+    font : bold 20px sans-serif; 
+  }
+}
+  
+  

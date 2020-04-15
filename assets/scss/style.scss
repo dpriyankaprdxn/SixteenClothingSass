@@ -1,7 +1,17 @@
-@import 'resetstyle.scss';
+@import 'resetstyle';
 
-@import 'mixin.scss';
+@import 'mixin';
 
-@import 'common.scss';
+@import 'library';
 
-@import 'header.scss';
+@import 'header';
+
+@import 'banner';
+
+@import 'latestProduct';
+
+@import 'about';
+
+@import 'purchase';
+
+@import 'footer';
